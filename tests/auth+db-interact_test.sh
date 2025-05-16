@@ -1,6 +1,10 @@
 # Ensure these match your port-forwarding setup and service prefixes
-AUTH_BASE_URL="http://localhost:8081/auth"
-DB_INTERACT_BASE_URL="http://localhost:8082"
+# AUTH_BASE_URL="http://localhost:8081/auth"
+# DB_INTERACT_BASE_URL="http://localhost:8082"
+
+# Routes after kong api gateway
+AUTH_BASE_URL="http://localhost:8000/auth"
+DB_INTERACT_BASE_URL="http://localhost:8000"  # this wont work because the db-interact service is not exposed via kong
 
 # Step 1: Register a Parent User
 # (Using unique details to avoid conflicts if run multiple times)

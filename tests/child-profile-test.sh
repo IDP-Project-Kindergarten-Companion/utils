@@ -5,8 +5,12 @@
 # and child-profile-svc (e.g., 8083:5002) are running in separate terminals.
 
 # --- Step 1: Define Base URLs ---
-AUTH_BASE_URL="http://localhost:8081/auth"
-CHILD_PROFILE_BASE_URL="http://localhost:8083/profiles"
+# AUTH_BASE_URL="http://localhost:8081/auth"
+# CHILD_PROFILE_BASE_URL="http://localhost:8083/profiles"
+
+# Routes after kong api gateway
+AUTH_BASE_URL="http://localhost:8000/auth"
+CHILD_PROFILE_BASE_URL="http://localhost:8000/profiles"
 
 echo "--- Comprehensive Test Suite for Child Profile Service ---"
 echo "Using AUTH_BASE_URL: ${AUTH_BASE_URL}"

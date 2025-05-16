@@ -5,9 +5,14 @@
 # and activity-log-service on localhost:8084 (via kubectl port-forward).
 
 # --- Configuration ---
-AUTH_BASE_URL="http://localhost:8081/auth"
-CHILD_PROFILE_BASE_URL="http://localhost:8083/profiles"
-ACTIVITY_LOG_BASE_URL="http://localhost:8084/log"
+# AUTH_BASE_URL="http://localhost:8081/auth"
+# CHILD_PROFILE_BASE_URL="http://localhost:8083/profiles"
+# ACTIVITY_LOG_BASE_URL="http://localhost:8084/log"
+
+# Routes after kong api gateway
+AUTH_BASE_URL="http://localhost:8000/auth"
+CHILD_PROFILE_BASE_URL="http://localhost:8000/profiles"
+ACTIVITY_LOG_BASE_URL="http://localhost:8000/log"
 
 # Function to print a separator
 print_separator() {
